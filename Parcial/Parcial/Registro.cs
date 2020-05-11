@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Parcial
 {
-    class Departamento
+    class Registro
     {
         string idDepto;
-        string nombreDepto;
+        string medicionMm;
+        DateTime fechaRegistro;
 
         public string IdDepto
         {
@@ -24,16 +25,29 @@ namespace Parcial
             }
         }
 
-        public string NombreDepto
+        public string MedicionMm
         {
             get
             {
-                return nombreDepto;
+                return medicionMm;
             }
 
             set
             {
-                nombreDepto = value;
+                medicionMm = value;
+            }
+        }
+
+        public DateTime FechaRegistro
+        {
+            get
+            {
+                return fechaRegistro;
+            }
+
+            set
+            {
+                fechaRegistro = value;
             }
         }
     }
