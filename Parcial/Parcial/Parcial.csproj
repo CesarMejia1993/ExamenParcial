@@ -53,6 +53,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormActual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActual.Designer.cs">
+      <DependentUpon>FormActual.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registro.cs" />
     <Compile Include="Vista.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActual.resx">
+      <DependentUpon>FormActual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegitrosEspecificos.resx">
+      <DependentUpon>FormRegitrosEspecificos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
