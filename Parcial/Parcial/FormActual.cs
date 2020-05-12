@@ -27,7 +27,6 @@ namespace Parcial
         {
             FormMostrarDepartamentos FM = new FormMostrarDepartamentos();
             FM.Show();
-;
         }
 
         private void listarReguistrsoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -38,7 +37,7 @@ namespace Parcial
 
         private void listarDepartamenroConRegusitroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormRegitrosEspecificos FRE = new FormRegitrosEspecificos();
+            FormDatosEspecificos FRE = new FormDatosEspecificos();
             FRE.Show();
         }
     }
