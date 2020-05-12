@@ -105,6 +105,18 @@
     <EmbeddedResource Include="FormActual.resx">
       <DependentUpon>FormActual.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDepartamento.resx">
+      <DependentUpon>FormDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMostrarDepartamentos.resx">
+      <DependentUpon>FormMostrarDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMostrarRegistro.resx">
+      <DependentUpon>FormMostrarRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistro.resx">
+      <DependentUpon>FormRegistro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegitrosEspecificos.resx">
       <DependentUpon>FormRegitrosEspecificos.cs</DependentUpon>
     </EmbeddedResource>
