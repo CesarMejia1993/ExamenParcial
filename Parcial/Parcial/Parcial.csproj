@@ -112,6 +112,9 @@
     <EmbeddedResource Include="FormDepartamento.resx">
       <DependentUpon>FormDepartamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDepartamentosRegistrado.resx">
+      <DependentUpon>FormDepartamentosRegistrado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMostrarDepartamentos.resx">
       <DependentUpon>FormMostrarDepartamentos.cs</DependentUpon>
     </EmbeddedResource>

@@ -37,5 +37,10 @@ namespace Parcial
             dataGridView1.DataSource = listaDepto;
             dataGridView1.Refresh();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

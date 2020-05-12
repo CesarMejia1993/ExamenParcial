@@ -77,12 +77,13 @@
             // 
             this.button2.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(251, 314);
+            this.button2.Location = new System.Drawing.Point(192, 315);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(214, 40);
+            this.button2.Size = new System.Drawing.Size(287, 40);
             this.button2.TabIndex = 92;
             this.button2.Text = "Lista de Registros Ingresados";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -124,6 +125,7 @@
             this.button1.TabIndex = 88;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormRegistro
             // 
@@ -141,6 +143,7 @@
             this.Controls.Add(this.button1);
             this.Name = "FormRegistro";
             this.Text = "FormRegistro";
+            this.Load += new System.EventHandler(this.FormRegistro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
