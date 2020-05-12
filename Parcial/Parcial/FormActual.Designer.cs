@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormActual));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.listarDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarReguistrsoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarDepartamenroConRegusitroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -72,17 +75,28 @@
             this.listarDepartamenroConRegusitroToolStripMenuItem.Text = "Listar Departamenro con regusitro ";
             this.listarDepartamenroConRegusitroToolStripMenuItem.Click += new System.EventHandler(this.listarDepartamenroConRegusitroToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(233, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(236, 192);
+            this.pictureBox1.TabIndex = 87;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormActual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 50);
+            this.ClientSize = new System.Drawing.Size(754, 282);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormActual";
             this.Text = "FormActual";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,5 +108,6 @@
         private System.Windows.Forms.ToolStripMenuItem listarDepartamentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarReguistrsoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarDepartamenroConRegusitroToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

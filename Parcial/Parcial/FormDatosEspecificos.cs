@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace Parcial
 {
     public partial class FormDatosEspecificos : Form
@@ -19,6 +20,44 @@ namespace Parcial
         public FormDatosEspecificos()
         {
             InitializeComponent();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            string nombre = "";
+            string medicion = "";
+            string fecha = "";
+            //Ciclo para recorrer cada fila del gridview
+            for (int i = 0; i < listaReg.Count; i++)
+            {
+                for (int j = 0; j < listaDepto.Count; j++)
+                {
+                    if (listaReg[i].IdDepto == listaDepto[j].IdDepto)
+                    {
+                        if (comboBox1.SelectedValue.ToString() == listaReg[i].IdDepto)
+                        {
+                            nombre = listaDepto[j].NombreDepto;
+                            medicion = listaReg[i].MedicionMm;
+                            fecha = Convert.ToString(listaReg[i].FechaRegistro);
+                            listBox1.Items.Add("Nombre del Departamento: " + nombre + "," + " Medición Registrada (mm): " + medicion + "," + " Fecha de Registro: " + fecha);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormMostrarDeptoReg fmd = new FormMostrarDeptoReg();
+            fmd.Show();
+
+
         }
 
         private void FormDatosEspecificos_Load(object sender, EventArgs e)
@@ -75,42 +114,6 @@ namespace Parcial
             comboBox1.DisplayMember = "NombreDepto";
             comboBox1.ValueMember = "IdDepto";
             comboBox1.Refresh();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            listBox1.Items.Clear();
-            string nombre = "";
-            string medicion = "";
-            string fecha = "";
-            //Ciclo para recorrer cada fila del gridview
-            for (int i = 0; i < listaReg.Count; i++)
-            {
-                for (int j = 0; j < listaDepto.Count; j++)
-                {
-                    if (listaReg[i].IdDepto == listaDepto[j].IdDepto)
-                    {
-                        if (comboBox1.SelectedValue.ToString() == listaReg[i].IdDepto)
-                        {
-                            nombre = listaDepto[j].NombreDepto;
-                            medicion = listaReg[i].MedicionMm;
-                            fecha = Convert.ToString(listaReg[i].FechaRegistro);
-                            listBox1.Items.Add("Nombre del Departamento: " + nombre + "," + " Medición Registrada (mm): " + medicion + "," + " Fecha de Registro: " + fecha);
-                        }
-                    }
-                }
-            }
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            FormMostrarDeptoReg frmMD = new FormMostrarDeptoReg();
-            frmMD.Show();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
